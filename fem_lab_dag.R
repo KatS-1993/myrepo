@@ -66,7 +66,7 @@ ggplot(fem_lab_dag_tidy, aes(x=x, y=y, xend = xend, yend = yend)) +
 
 path = getwd()
 
-ggsave(filename = file.path(path,"graphs","part_time_dag1.png"), width = 9, height=4)
+ggsave(filename = file.path(path,"graphs","part_time_dag1.png"), width =300, height=100, units="mm", bg ="white")
 
 
 ## dag without points
@@ -80,6 +80,7 @@ ggplot(fem_lab_dag_tidy, aes(x=x, y=y, xend = xend, yend = yend)) +
   guides(color=FALSE, fill = FALSE) +
   theme_dag()
 
-ggsave(filename = file.path(path,"graphs","part_time_dag2.png"), width = 9, height=4)
+ggsave(filename = file.path(path,"graphs","part_time_dag2.png"), width =300, height=100, units="mm", bg ="white")
+
 
 
